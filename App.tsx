@@ -8,13 +8,16 @@
 import {ThemeProvider} from '@shopify/restyle';
 import React from 'react';
 
-import {Text} from 'react-native';
 import {theme} from './src/theme/theme';
+import {Text} from './src/components/Text/Text';
 
 function App(): React.JSX.Element {
   return (
     <ThemeProvider theme={theme}>
-      <Text style={{color: theme.colors.primary}}>Teste</Text>
+      <Text preset="headingLarge" color="primary" black>
+        Olá
+      </Text>
+      <Text mt="s8">Digite seu e-mail e senha para entrar</Text>
     </ThemeProvider>
   );
 }

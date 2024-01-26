@@ -14,6 +14,7 @@ export const theme = createTheme({
     primary: palette.greenPrimary,
     primaryContrast: palette.grayWhite,
     background: palette.grayWhite,
+    backgroundContrast: palette.grayBlack,
     error: palette.redError,
     sucess: palette.greenLight,
   },
@@ -33,7 +34,7 @@ export const theme = createTheme({
     s6: 6,
   },
   textVariants: {
-    default: {},
+    defaults: {},
   },
 });
 
