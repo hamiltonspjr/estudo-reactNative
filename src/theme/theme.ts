@@ -39,4 +39,4 @@ export const theme = createTheme({
 });
 
 export type Theme = typeof theme;
-export type Colors = keyof Theme['colors'];
+export type ThemeColors = keyof Theme['colors'];
