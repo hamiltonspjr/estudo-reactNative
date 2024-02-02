@@ -6,6 +6,8 @@ const palette = {
   grayWhite: '#FFFFFF',
   grayBlack: '#000000',
   redError: '#E62E27',
+  gray1: '#EAE9E9',
+  gray2: '#908F8F',
 };
 
 export const theme = createTheme({
@@ -39,4 +41,4 @@ export const theme = createTheme({
 });
 
 export type Theme = typeof theme;
-export type Colors = keyof Theme['colors'];
+export type ThemeColors = keyof Theme['colors'];
