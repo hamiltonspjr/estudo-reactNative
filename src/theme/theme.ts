@@ -8,6 +8,7 @@ const palette = {
   redError: '#E62E27',
   gray1: '#EAE9E9',
   gray2: '#908F8F',
+  gray3: '#8E8E8E',
 };
 
 export const theme = createTheme({
