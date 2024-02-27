@@ -1,9 +1,12 @@
 import React from 'react';
-import {CheckRound} from '../../assets/icons/CheckRound';
-import {Email} from '../../assets/icons/Email';
+import {CheckRoundIcon} from '../../assets/icons/CheckRoundIcon';
+import {EmailIcon} from '../../assets/icons/EmailIcon';
 import {ThemeColors} from '../../theme/theme';
 import {useAppTheme} from '../../hooks/useAppTheme';
 import {Pressable} from 'react-native';
+import {ArrowLeftIcon} from '../../assets/icons/ArrowLeftIcon';
+import {EyeOffIcon} from '../../assets/icons/EyeOffIcon';
+import {EyeOnIcon} from '../../assets/icons/EyeOnIcon';
 
 export interface IconBase {
   size?: number;
@@ -38,8 +41,11 @@ export function Icon({
 }
 
 const iconRegistry = {
-  checkRound: CheckRound,
-  email: Email,
+  checkRound: CheckRoundIcon,
+  email: EmailIcon,
+  arrowLeft: ArrowLeftIcon,
+  eyeOff: EyeOffIcon,
+  eyeOn: EyeOnIcon,
 };
 
 type IconType = typeof iconRegistry;
