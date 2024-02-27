@@ -51,7 +51,7 @@ export function TextInput({
             autoCapitalize="none"
             ref={inputRef}
             placeholderTextColor={colors.gray3}
-            style={$textInputStyle}
+            style={[$textInputStyle, {color: colors.backgroundContrast}]}
             {...rnTextInputProps}
           />
           {RightComponent && (
