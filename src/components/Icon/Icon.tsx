@@ -7,6 +7,7 @@ import {Pressable} from 'react-native';
 import {ArrowLeftIcon} from '../../assets/icons/ArrowLeftIcon';
 import {EyeOffIcon} from '../../assets/icons/EyeOffIcon';
 import {EyeOnIcon} from '../../assets/icons/EyeOnIcon';
+import {MessageIcon} from '../../assets/icons/MessageIcon';
 
 export interface IconBase {
   size?: number;
@@ -46,6 +47,7 @@ const iconRegistry = {
   arrowLeft: ArrowLeftIcon,
   eyeOff: EyeOffIcon,
   eyeOn: EyeOnIcon,
+  message: MessageIcon,
 };
 
 type IconType = typeof iconRegistry;
