@@ -4,8 +4,19 @@ import {Text} from '../../../components/Text/Text';
 import {TextInput} from '../../../components/TextInput/TextInput';
 import {PasswordInpout} from '../../../components/PasswordInput/PasswordInput';
 import {Button} from '../../../components/Button/Button';
+import {RootStackParamList} from '../../../routes/Routes';
+import {NativeStackScreenProps} from '@react-navigation/native-stack';
 
-export function LoginScreen() {
+type ScreenProps = NativeStackScreenProps<RootStackParamList, 'LoginScreen'>;
+
+export function LoginScreen({navigation}: ScreenProps) {
+  function handleForgotPasswordScreen() {
+    navigation.navigate('ForgotPasswordScreen');
+  }
+
+  function handleSignUpScreen() {
+    navigation.navigate('SignUpScreen');
+  }
   return (
     <Screen>
       <Text preset="headingLarge" mb="s8" black color="primary">
@@ -24,11 +35,20 @@ export function LoginScreen() {
         placeholder="Digite sua senha"
         boxProps={{mb: 's8'}}
       />
-      <Text preset="paragraphMedium" color="primary" bold mb="s48">
+      <Text
+        preset="paragraphMedium"
+        color="primary"
+        bold
+        mb="s48"
+        onPress={handleForgotPasswordScreen}>
         Esqueci minha senha
       </Text>
       <Button title="Entrar" mb="s16" />
-      <Button title="Criar Conta" preset="outline" />
+      <Button
+        title="Criar Conta"
+        preset="outline"
+        onPress={handleSignUpScreen}
+      />
     </Screen>
   );
 }
