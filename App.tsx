@@ -1,24 +1,18 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
-
 import {ThemeProvider} from '@shopify/restyle';
 import React from 'react';
 
 import {theme} from './src/theme/theme';
-import {Text} from './src/components/Text/Text';
+import {SafeAreaProvider} from 'react-native-safe-area-context';
+
+import {Router} from './src/routes/Routes';
 
 function App(): React.JSX.Element {
   return (
-    <ThemeProvider theme={theme}>
-      <Text preset="headingLarge" color="primary" black>
-        Olá
-      </Text>
-      <Text mt="s8">Digite seu e-mail e senha para entrar</Text>
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <ThemeProvider theme={theme}>
+        <Router />
+      </ThemeProvider>
+    </SafeAreaProvider>
   );
 }
 
