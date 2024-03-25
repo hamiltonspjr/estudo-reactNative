@@ -1,7 +1,6 @@
 import React from 'react';
-import {Box, BoxProps} from '../Box/Box';
-import {useAppSafeArea} from '../../hooks/useAppSafeArea';
-import {useAppTheme} from '../../hooks/useAppTheme';
+import {Box, BoxProps} from '@components';
+import {useAppSafeArea, useAppTheme} from '@hooks';
 import {ScrollViewContainer, ViewContainer} from './components/ScreenContainer';
 import {KeyboardAvoidingView, Platform} from 'react-native';
 import {ScreenHeader} from './components/ScreenHeader';
