@@ -1,6 +1,8 @@
 import React from 'react';
-import {IconBase} from '../../components/Icon/Icon';
+
 import {Path, Svg} from 'react-native-svg';
+
+import {IconBase} from '../../components/Icon/Icon';
 
 export function EmailIcon({size = 40, color = 'white'}: IconBase) {
   return (

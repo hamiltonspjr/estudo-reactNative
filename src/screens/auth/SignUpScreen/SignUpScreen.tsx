@@ -1,4 +1,8 @@
 import React from 'react';
+
+import {zodResolver} from '@hookform/resolvers/zod';
+import {useForm} from 'react-hook-form';
+
 import {
   Screen,
   Text,
@@ -7,9 +11,8 @@ import {
   FormPasswordInput,
 } from '@components';
 import {useResetNavigationSuccess} from '@hooks';
-import {useForm} from 'react-hook-form';
+
 import {SignUpSchema, signUpSchema} from './signUpSchema';
-import {zodResolver} from '@hookform/resolvers/zod';
 
 export function SignUpScreen() {
   const {control, formState, handleSubmit} = useForm<SignUpSchema>({
