@@ -1,5 +1,7 @@
 import React from 'react';
-import {Box, TouchableOpacityBox, Icon, Text} from '@components';
+import {Box} from '../../Box/Box';
+import {Icon} from '../../Icon/Icon';
+import {Text} from '../../Text/Text';
 
 import {useNavigation} from '@react-navigation/native';
 
