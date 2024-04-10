@@ -27,6 +27,7 @@ export function LoginScreen({navigation}: ScreenProps) {
     mode: 'onChange',
   });
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   function submitForm(data: LoginSchemaType) {
     // TODO: Implementar a lógica de login
   }
