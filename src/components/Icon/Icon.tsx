@@ -8,7 +8,11 @@ import {CheckRoundIcon} from '../../assets/icons/CheckRoundIcon';
 import {EmailIcon} from '../../assets/icons/EmailIcon';
 import {EyeOffIcon} from '../../assets/icons/EyeOffIcon';
 import {EyeOnIcon} from '../../assets/icons/EyeOnIcon';
+import {HomeIcon} from '../../assets/icons/HomeIcon';
 import {MessageIcon} from '../../assets/icons/MessageIcon';
+import {ProfileIcon} from '../../assets/icons/ProfileIcon';
+import {QueriesIcon} from '../../assets/icons/QueriesIcon';
+import {SearchIcon} from '../../assets/icons/SearchIcon';
 import {useAppTheme} from '../../hooks/useAppTheme';
 
 export interface IconBase {
@@ -50,6 +54,10 @@ const iconRegistry = {
   eyeOff: EyeOffIcon,
   eyeOn: EyeOnIcon,
   message: MessageIcon,
+  home: HomeIcon,
+  search: SearchIcon,
+  queries: QueriesIcon,
+  profile: ProfileIcon,
 };
 
 type IconType = typeof iconRegistry;
